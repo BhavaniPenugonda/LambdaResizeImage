@@ -39,7 +39,6 @@ exports.handler = async (event) => {
         };
 
         const uploadResult = await s3.upload(uploadParams).promise();
-
         console.log(`Resized image uploaded to: ${uploadResult.Location}`);
 
         return {
